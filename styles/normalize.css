@@ -1,0 +1,413 @@
+/*
+! Modernized version of normalize.css updated by https://github.com/parksthecoder
+! https://www.npmjs.com/package/modern-normalize-css
+! normalize.css v1.0.0 | MIT License | forked and modernized from https://github.com/necolas/normalize.css 
+*/
+
+/* Document
+   ========================================================================== */
+
+/**
+ * Root-level font definitions and text rendering optimizations.
+ */
+:root {
+  font-size: 16px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+:is(html) {
+  line-height: 1.375rem; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  text-size-adjust: 100%; /* 2 */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Ensure a minimum viewport and remove the margin in all browsers.
+ * Accommodate for the safe area in devices with notches or rounded corners.
+ */
+:is(body) {
+  line-height: 1.375rem;
+  min-height: 100dvh;
+  margin: 0;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+:is(p) {
+  line-height: 1.375rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  overflow-wrap: break-word;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+:is(main) {
+  display: block;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+:is(a) {
+  background-color: transparent;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+:is(h1) {
+  font-size: 2rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+:is(h2) {
+  font-size: 1.75rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+:is(h3) {
+  font-size: 1.5rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+:is(h4) {
+  font-size: 1.25rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+:is(h5) {
+  font-size: 1rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+:is(h6) {
+  font-size: 0.875rem;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
+  line-height: 1.375rem;
+}
+
+/**
+ * Text wrapping and hyphenation rules for headings.
+ */
+:is(h1),
+:is(h2),
+:is(h3),
+:is(h4),
+:is(h5),
+:is(h6) {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+:is(hr) {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+:is(pre) {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1rem;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+:is(a) {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+:is(abbr[title]) {
+  border-bottom: none; /* 1 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+:is(b),
+:is(strong) {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+:is(code),
+:is(kbd),
+:is(samp) {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1rem;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+:is(small) {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+:is(sub),
+:is(sup) {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+:is(sub) {
+  bottom: -0.25rem;
+}
+
+:is(sup) {
+  top: -0.5rem;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+:is(img) {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Inherit font properties and reset margin for form elements.
+ * Show the overflow in IE and Edge.
+ */
+:is(button),
+:is(input),
+:is(optgroup),
+:is(select),
+:is(textarea) {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.375rem;
+  margin: 0;
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ */
+:is(button),
+:is(select) {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ * Remove the inner border and padding in Firefox.
+ */
+:is(button),
+:is([type="button"]),
+:is([type="reset"]),
+:is([type="submit"]),
+:is(button)::moz-focus-inner,
+:is([type="button"])::moz-focus-inner,
+:is([type="reset"])::moz-focus-inner,
+:is([type="submit"])::moz-focus-inner {
+  appearance: button; /* Standard property */
+  border-style: none;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule in Firefox.
+ */
+:is(button):-moz-focusring,
+:is([type="button"]):-moz-focusring,
+:is([type="reset"]):-moz-focusring,
+:is([type="submit"]):-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+:is(fieldset) {
+  padding: 0.35rem 0.75rem 0.625rem;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+:is(legend) {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+:is(progress) {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+:is(textarea) {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+:is([type="checkbox"]),
+:is([type="radio"]) {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+:is([type="number"])::-webkit-inner-spin-button,
+:is([type="number"])::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+:is([type="search"]) {
+  appearance: textfield; /* Standard property */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+:is([type="search"])::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+:is(::-webkit-file-upload-button) {
+  appearance: button; /* Standard property */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/**
+ * Add the correct display in Edge, IE 10+, Firefox, and all browsers for `details` and `summary`.
+ */
+:is(details),
+:is(summary) {
+  display: block;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+ for `template` and elements with the `hidden` attribute.
+ */
+:is(template),
+:is([hidden]) {
+  display: none;
+}
