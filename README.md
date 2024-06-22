@@ -6,6 +6,8 @@ A MODERN alternative to CSS resets - This is a fork inspired by the original nor
 
 [![license](https://img.shields.io/npm/l/normalize.css.svg)](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 
+### Manual
+
 ## NPM
 
 ```
@@ -23,8 +25,25 @@ yarn add modern-normalize-css
 ```
 bun add modern-normalize-css
 ```
-OR 
-Simply Copy the `styles/normalize.css` file to your project and use it as you would the original normalize.css file in the root of the project.
+Simply copy the `styles/normalize.css` file to your project and use it as you would the original normalize.css file in the root of the project.
+
+## Usage
+
+### Import in CSS
+
+Add the following line to your main CSS file:
+
+```css
+@import "modern-normalize-css/styles/normalize.css";
+```
+
+### Import in JavaScript/TypeScript
+
+Add the following line to your main JavaScript or TypeScript file:
+
+```js
+import "modern-normalize-css/styles/normalize.css";
+```
 
 ## Download
 
