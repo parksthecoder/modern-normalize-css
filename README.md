@@ -1,4 +1,4 @@
-# Modern Normalize.css v1.0.0
+# modern-normalize-css v1.0.3
 
 ![Normalize Logo](https://necolas.github.io/normalize.css/logo.svg)
 
