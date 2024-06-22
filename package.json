@@ -1,6 +1,6 @@
 {
   "name": "modern-normalize-css",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A modernized version of normalize.css",
   "main": "styles/normalize.css",
   "scripts": {
